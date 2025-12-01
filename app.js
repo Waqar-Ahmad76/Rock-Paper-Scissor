@@ -6,14 +6,14 @@ let cScore = document.querySelector(("#comp-score"));
 let uScore = document.querySelector(("#user-score"));
 
 const updateScore = (userWin) => {
-    if(userWin) {
+    if (userWin) {
         uScore.innerText = userScore;
-    } 
-    else {
-        cScore.innerText=compscore;
     }
-   
-    
+    else {
+        cScore.innerText = compscore;
+    }
+
+
 }
 
 const showWinner = (userWin) => {
@@ -21,13 +21,13 @@ const showWinner = (userWin) => {
         console.log("You won");
         msg.innerText = "You won";
         userScore++;
-        msg.style.backgroundColor="green";
+        msg.style.backgroundColor = "green";
     }
     else {
         console.log("you lost");
         msg.innerText = "You Lost:(";
         compscore++;
-         msg.style.backgroundColor="red";
+        msg.style.backgroundColor = "red";
     }
     updateScore(userWin);
 };
@@ -36,7 +36,7 @@ const showWinner = (userWin) => {
 const drawGame = () => {
     console.log("Its draw");
     msg.innerText = "It's draw";
-     msg.style.backgroundColor="#081b31";
+    msg.style.backgroundColor = "#081b31";
 };
 
 const generateChoice = () => {
